@@ -5,7 +5,7 @@ const Header = () => {
 
   return (
     <div className="flex justify-end mt-[35px]">
-      <ul className="flex justify-center  items-center gap-[25px]">
+      <ul className="flex justify-center text-[12px] xl:text-[22px] lg:text[20px] md:[18px] sm:text[16px] items-center gap-[25px]">
         <li>
           <a
             href="#home"
@@ -14,17 +14,18 @@ const Header = () => {
               navActive === "#home" ? "text-gray-100" : "hover:text-gray-100"
             }
           >
-            <i className="uil uil-estate nav--icon"></i> <span class="material-symbols-outlined">
-home
-</span>
+            <i className="uil uil-estate nav--icon"></i>{" "}
+            <span  class="material-symbols-outlined">home</span>
           </a>
         </li>
         <li>
           <a
-            href="#home"
+            href="#experience"
             onClick={() => setNavActive("#experience")}
             className={
-              navActive === "#experience" ? "text-gray-100" : "hover:text-gray-100"
+              navActive === "#experience"
+                ? "text-gray-100"
+                : "hover:text-gray-100"
             }
           >
             <i className="uil uil-estate nav--icon"></i> Experience
@@ -32,7 +33,7 @@ home
         </li>
         <li>
           <a
-            href="#home"
+            href="#project"
             onClick={() => setNavActive("#project")}
             className={
               navActive === "#project" ? "text-gray-100" : "hover:text-gray-100"
@@ -43,7 +44,7 @@ home
         </li>
         <li>
           <a
-            href="#home"
+            href="#contact"
             onClick={() => setNavActive("#contact")}
             className={
               navActive === "#contact" ? "text-gray-100" : "hover:text-gray-100"

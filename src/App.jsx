@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Experience from './components/Experience'
 import Project from './components/Project'
 import Contact from './components/Contact'
+import TechStacks from './components/TechStacks'
 
 function App() {
 
@@ -12,8 +13,9 @@ function App() {
     <div className='container'>
       <Header/>
       <Hero/>
-      <Experience/>
       <Project/>
+      <TechStacks/>
+      <Experience/>
       <Contact/>
     </div>
   )

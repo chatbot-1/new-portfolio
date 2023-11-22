@@ -20,6 +20,17 @@ body{
     @apply py-[75px];
   }
 }
+/* .img-width{
+  display: flex;
+  justify-content: flex-end;
+  width: 300px
+} */
+/* .my-img{
+  height: 250px;
+}
+.textarea{
+  width: 500px
+} */
 
 @layer components {
   li{
