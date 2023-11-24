@@ -1,21 +1,34 @@
-import React from 'react'
-import cover from "../assets/cover.jpeg"
+import React from "react";
+import cover from "../assets/cover.jpeg";
+import { PiHandWavingBold } from "react-icons/pi";
+import resume from "../assets/resume.pdf"
 
 const Hero = () => {
+
+  
   return (
-    <div className='container flex items-center justify-center'>
-      <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-11 justify-center items-center mt-[50px]'>
-        <div className=''>
-          <img src={cover} alt="" className='h-[300px] mx-auto object-cover w-[300px]'/>
+    <div id="home" className="container flex items-center justify-center mt-[50px]">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-11 justify-center items-center mt-[50px]">
+        <div className="">
+          <img
+            src={cover}
+            alt=""
+            className="h-[300px] mx-auto object-cover w-[300px]"
+          />
         </div>
-        <div className=''>
-          <h2 className='text-[25px] text-center'>Hii, Atul Here!!!</h2>
-          <p className='mt-[20px] text-[14px]'>Crafting beautiful interfaces, components and experiences for the web with a focus on ux design and branding. Frontend Engineer at Dunolabs</p>
-          <p className='mt-[20px] text-[14px]'>In the past I've developed Invoicetor, a simple invoicing app for freelancers and small scale businesses & individuals.</p>
+        <div className="">
+          <h2 className="text-[22px] text-center xl:text-start md:text-start sm:text-start">Heyy, I'm Atul 👋</h2>
+          <p className="mt-[20px] text-[13px]">
+          your go-to frontend maestro with a full stack twist. When I'm not sculpting pixels and wrangling bugs, I'm dancing through JavaScript frameworks.
+          </p>
+          <p className="mt-[20px] text-[13px] mb-[30px]">
+          Known for fixing bugs with a stare and turning code into art, I'm here to sprinkle some frontend magic on your projects. Let's turn your digital dreams into reality!
+          </p>
+          <a download="" href={resume} className="rounded pt-[10px] pb-[10px] pl-[18px] pr-[18px] text-[14px] ease-in-out duration-300 bg-gray-700 hover:bg-gray-800">Resume</a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

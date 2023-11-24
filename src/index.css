@@ -13,6 +13,13 @@ body{
   font-family: 'Comfortaa', sans-serif;
   background: rgb(22, 22, 22);
   color: rgb(177, 177, 177);
+  scroll-behavior: smooth;
+}
+.head-point{
+  background: rgb(14, 14, 14);
+}
+html{
+  scroll-behavior: smooth
 }
 
 @layer base {
@@ -20,6 +27,7 @@ body{
     @apply py-[75px];
   }
 }
+
 /* .img-width{
   display: flex;
   justify-content: flex-end;
@@ -39,43 +47,11 @@ body{
   .container {
     @apply max-w-full w-[1300px] px-5 mx-auto;
   }
-  .btn {
-    @apply bg-black py-[15px] px-[35px] rounded-[50px] text-white font-[600] mt-[38px] text-center items-center justify-center;
-  }
-  .heading {
-    @apply text-[44px] leading-[54px] font-[700] text-black;
-  }
-  .text--para {
-    @apply text-[18px] leading-[30px] font-[400] text-gray-800 mt-[18px];
-  }
-  .header {
-    @apply bg-[url('./assets/images/mask.png')] bg-no-repeat bg-center bg-cover w-full h-[60px] leading-[100px];
-  }
-  .hero--section {
-    @apply bg-[url('./assets/images/hero-bg.png')] bg-no-repeat bg-center bg-cover;
-  }
-  .form--label {
-    @apply text-black font-semibold text-[16px] mb-2;
-  }
-  .form--input {
-    @apply w-full px-4 py-3 border border-solid border-[#0066ff61] focus:outline-none focus:border-blue-700 text-[16px] leading-7 text-black placeholder:text-gray-700 cursor-pointer rounded-md;
-  }
+
 }
 
 @media only screen and (max-width: 1024px) {
   .container {
     @apply w-full;
-  }
-  section {
-    @apply py-[35px];
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .heading {
-    @apply text-[26px] leading-[36px];
-  }
-  .text--para {
-    @apply text-[16px] leading-7 mt-3;
   }
 }

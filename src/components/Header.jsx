@@ -4,8 +4,8 @@ const Header = () => {
   const [navActive, setNavActive] = useState("#home");
 
   return (
-    <div className="flex justify-end mt-[35px]">
-      <ul className="flex justify-center text-[12px] xl:text-[22px] lg:text[20px] md:[18px] sm:text[16px] items-center gap-[25px]">
+    <div className="flex p-[15px] head-point justify-end w-full m-auto fixed top-0 left-0 z-50 ">
+      <ul className="container flex justify-center xl:justify-end lg:justify-end md:justify-end sm:justify-center text-[12px] xl:text-[14px] lg:text[14px] md:[14px] sm:text[13px] items-center gap-[25px]">
         <li>
           <a
             href="#home"
