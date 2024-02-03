@@ -7,6 +7,7 @@ const Experience = () => {
         <div className="card">
           <h2 className="text-[22px]">Working Experience 💪:</h2>
           <div className="mt-[25px] border border-dashed rounded p-6 pt-10 pb-10 border-gray-700/50">
+
             <div className=" cursor-pointer exp-1 p-5 shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
               <div className="flex justify-between gap-6">
                 <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
@@ -30,7 +31,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div className=" cursor-pointer exp-1 p-5 shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
+            <div className=" cursor-pointer exp-1 p-5 mt-[50px] shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
               <div className="flex justify-between gap-6">
                 <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
                   Frontend Developer Intern
