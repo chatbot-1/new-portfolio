@@ -8,16 +8,16 @@ const Hero = () => {
   
   return (
     <div id="home" className="container flex items-center justify-center mt-[50px]">
-      <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-11 justify-center items-center mt-[50px]">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 justify-center items-center mt-[50px]">
         <div className="">
           <img
             src={cover}
             alt=""
-            className="h-[300px] mx-auto object-cover w-[300px]"
+            className="h-[200px] m-0 sm: md:m-auto lg:m-auto xl:m-auto rounded-full object-cover w-[200px]"
           />
         </div>
-        <div className="">
-          <h2 className="text-[22px] text-center xl:text-start md:text-start sm:text-start">Heyy, I'm Atul 👋</h2>
+        <div className="mt-[40px]">
+          <h2 className="text-[22px] ">Heyy, I'm Atul 👋</h2>
           <p className="mt-[20px] text-[13px]">
           your go-to frontend maestro with a full stack twist. When I'm not sculpting pixels and wrangling bugs, I'm dancing through JavaScript frameworks.
           </p>

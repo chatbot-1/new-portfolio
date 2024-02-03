@@ -5,6 +5,8 @@ import {
   DiHtml5,
   DiJava,
   DiJavascript1,
+  DiMongodb,
+  DiNodejs,
   DiPython,
   DiReact,
   DiSass,
@@ -30,7 +32,7 @@ const Project = () => {
                     <a href="https://github.com/chatbot-1/healthAura2.0"><FaGithub /></a>
                   </p>
                   <p className="pl-[5px] cursor-pointer hover:text-white">
-                    <a href=""><FaEarthAmericas /></a>
+                    <a href="https://health-aura.netlify.app/"><FaEarthAmericas /></a>
                   </p>
                 </div>
               </div>
@@ -67,6 +69,54 @@ const Project = () => {
               </li>
               <li className="flex text-[30px] gap-7 pt-4 items-center justify-start">
                 <DiReact /> <SiTailwindcss /> <DiJavascript1 /> <SiFirebase />
+              </li>
+            </ul>
+          </div>
+
+          <div className="p-5 rounded shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
+            <div className="sec">
+              <div className="flex justify-between">
+                <h3 className="border-dashed border-b-[1.5px] border-gray-700/50 hover:text-white cursor-pointer flex items-center gap-3">SpotSail<MdArrowOutward/></h3>
+                <div className="flex gap-5 text-[20px]">
+                  <p className="cursor-pointer hover:text-white">
+                    <a href="https://github.com/chatbot-1/spot-sail"><FaGithub /></a>
+                  </p>
+                  <p className="pl-[5px] cursor-pointer hover:text-white">
+                    <a href="https://spotsail.netlify.app/"><FaEarthAmericas /></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ul className="list-disc pl-5 mt-[30px] text-[13px]">
+              <li className="mb-[10px]">
+                SpotSail is a web app which helps the users to find the available seats in their favourite restaurants, or beds in the hospital, or seats in the colleges for admission.
+              </li>
+              <li className="flex text-[30px] gap-7 pt-4 items-center justify-start">
+              <DiReact /> <FaNode /> <SiMongodb /> <SiTailwindcss />
+              </li>
+            </ul>
+          </div>
+
+          <div className="p-5 rounded shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
+            <div className="sec">
+              <div className="flex justify-between">
+                <h3 className="border-dashed border-b-[1.5px] border-gray-700/50 hover:text-white cursor-pointer flex items-center gap-3">Milton<MdArrowOutward/></h3>
+                <div className="flex gap-5 text-[20px]">
+                  <p className="cursor-pointer hover:text-white">
+                    <a href="https://github.com/chatbot-1/milton"><FaGithub /></a>
+                  </p>
+                  <p className="pl-[5px] cursor-pointer hover:text-white">
+                    <a href="https://hirequotient-milton.netlify.app/"><FaEarthAmericas /></a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <ul className="list-disc pl-5 mt-[30px] text-[13px]">
+              <li className="mb-[10px]">
+                Created this complex UI design and used taiwind css for the first time although it was a company assignment.
+              </li>
+              <li className="flex text-[30px] gap-7 pt-4 items-center justify-start">
+              <DiReact /> <SiTailwindcss />
               </li>
             </ul>
           </div>
@@ -117,30 +167,6 @@ const Project = () => {
               </li>
               <li className="flex text-[30px] gap-7 pt-4 items-center justify-start">
               <DiPython /> <DiDjango /> <DiJavascript1 /> <SiTailwindcss />
-              </li>
-            </ul>
-          </div>
-
-          <div className="p-5 rounded shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
-            <div className="sec">
-              <div className="flex justify-between">
-                <h3 className="border-dashed border-b-[1.5px] border-gray-700/50 hover:text-white cursor-pointer flex items-center gap-3">AI ChatBot<MdArrowOutward/></h3>
-                <div className="flex gap-5 text-[20px]">
-                  <p className="cursor-pointer hover:text-white">
-                    <a href=""><FaGithub /></a>
-                  </p>
-                  <p className="pl-[5px] cursor-pointer hover:text-white">
-                    <a href=""><FaEarthAmericas /></a>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <ul className="list-disc pl-5 mt-[30px] text-[13px]">
-              <li className="mb-[10px]">
-                Developed a chat application using the ChatGPT Api to implement a similar kind of functionality just by writing the prompt.
-              </li>
-              <li className="flex text-[30px] gap-7 pt-4 items-center justify-start">
-                <DiPython /> <DiDjango /> <DiJavascript1 /> <SiTailwindcss />
               </li>
             </ul>
           </div>
