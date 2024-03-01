@@ -12,9 +12,9 @@ function App() {
       <div className="container">
         <Header />
         <Hero />
+        <Experience />
         <Project />
         <TechStacks />
-        <Experience />
         <Contact />
       </div>
     </div>

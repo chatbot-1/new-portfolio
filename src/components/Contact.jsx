@@ -1,4 +1,3 @@
-import React from "react";
 import {
   FaDiscord,
   FaGithub,
@@ -13,7 +12,7 @@ const Contact = () => {
   return (
     <div id="contact" className="text-[13px] xl:text-[16px] md:text-[15px] sm:text-[14px] container mt-[100px] mb-[60px]">
       <div>
-        <h2 className="text-[22px]">React out to me at 🤝:</h2>
+        <h2 className="text-[22px]">Reach out to me at 🤝:</h2>
         <div className="flex justify-evenly mt-[50px]">
           <div className="flex flex-col gap-10">
             <a

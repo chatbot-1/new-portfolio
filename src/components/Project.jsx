@@ -1,17 +1,12 @@
-import React from "react";
 import {
   DiCss3,
   DiDjango,
   DiHtml5,
-  DiJava,
   DiJavascript1,
-  DiMongodb,
-  DiNodejs,
   DiPython,
   DiReact,
-  DiSass,
 } from "react-icons/di";
-import { SiFirebase, SiMongodb, SiRedux, SiTailwindcss } from "react-icons/si";
+import { SiFirebase, SiMongodb, SiTailwindcss } from "react-icons/si";
 import { FaGithub, FaNode } from "react-icons/fa";
 import { FaEarthAmericas } from "react-icons/fa6";
 import { MdArrowOutward } from "react-icons/md";
@@ -20,7 +15,7 @@ const Project = () => {
   return (
     <div id="project" className="container relative ">
       <div className="mt-[100px]">
-        <h2 className="text-[22px]">Passionate creations, crafted by me 🌱:</h2>
+        <h2 className="text-[22px]">Look at my projects 🌱:</h2>
         <div className="border border-dashed rounded p-6 pb-11 pt-11 border-gray-700/50 grid md:grid-cols-2 sm:grid-cols-1  justify-center mt-[25px] gap-[70px]">
 
           <div className="shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90 p-5">

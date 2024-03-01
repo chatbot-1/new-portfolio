@@ -1,6 +1,4 @@
-import React from "react";
 import cover from "../assets/cover.jpeg";
-import { PiHandWavingBold } from "react-icons/pi";
 import resume from "../assets/resume.pdf"
 
 const Hero = () => {

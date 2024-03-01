@@ -1,4 +1,3 @@
-import React from "react";
 
 const Experience = () => {
   return (
@@ -7,7 +6,6 @@ const Experience = () => {
         <div className="card">
           <h2 className="text-[22px]">Working Experience 💪:</h2>
           <div className="mt-[25px] border border-dashed rounded p-6 pt-10 pb-10 border-gray-700/50">
-
             <div className=" cursor-pointer exp-1 p-5 shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
               <div className="flex justify-between gap-6">
                 <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
@@ -24,9 +22,12 @@ const Experience = () => {
               </div>
               <div className="mt-[20px]">
                 <p className="text-[13px]">
-                  Building the product from scratch by using ReactJS, NodeJS,
-                  MySQL, Rest API and other useful tools. Actively involved in
-                  the implementation and enhancement of this web application.
+                  Leading the development of our groundbreaking product by
+                  collaborating across teams, crafting a robust backend with
+                  Azure Functions (Python), ensuring seamless integration with
+                  the ReactJS and TypeScript frontend. Streamlining operations
+                  through DevOps CI/CD, managing ongoing production on Azure,
+                  utilizing SQL Database and Static Web Apps for hosting.
                 </p>
               </div>
             </div>
@@ -47,9 +48,11 @@ const Experience = () => {
               </div>
               <div className="mt-[20px]">
                 <p className="text-[13px]">
-                  Contributed to a machine learning project, spearheading the
-                  development of the frontend using robust tech stacks like
-                  ReactJS, Redux, HTML/CSS, Tailwind CSS and Firebase.
+                  Spearheaded frontend development for machine learning
+                  projects, embedding user-centric design principles.
+                  Collaborating seamlessly with machine learning teams,
+                  integrated frontend design tools to ensure intuitive and
+                  responsive user interfaces.
                 </p>
               </div>
             </div>
