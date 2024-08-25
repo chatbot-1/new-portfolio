@@ -1,4 +1,4 @@
-
+import { MdArrowOutward } from "react-icons/md";
 const Experience = () => {
   return (
     <div id="experience" className="container mt-[100px]">
@@ -9,25 +9,54 @@ const Experience = () => {
             <div className=" cursor-pointer exp-1 p-5 shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
               <div className="flex justify-between gap-6">
                 <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
-                  Software Developer Intern
+                  Software Developer
                 </h3>
                 <div>
-                  <h3 className="cursor-pointer hover:text-white text-[14px]">
-                    InventMinds Inc.
-                  </h3>
+                  <a href="https://www.ednius.com/" className="cursor-pointer hover:text-white text-[14px] flex items-center gap-2">
+                    Ednius Inc. <MdArrowOutward/>
+                  </a>
                   <p className="text-[12px] text-gray-400">
-                    Feb 2024 – Current
+                    June 2024 – Current
                   </p>
                 </div>
               </div>
               <div className="mt-[20px]">
                 <p className="text-[13px]">
-                  Leading the development of our groundbreaking product by
-                  collaborating across teams, crafting a robust backend with
-                  Azure Functions (Python), ensuring seamless integration with
-                  the ReactJS and TypeScript frontend. Streamlining operations
-                  through DevOps CI/CD, managing ongoing production on Azure,
-                  utilizing SQL Database and Static Web Apps for hosting.
+                  Developed and refined AI-powered grading platform at Ednius,
+                  utilizing React, TypeScript, Azure, and Python to automate
+                  grading and enhance personalized feedback for students. <br />{" "}
+                  • Designed efficient systems and deployed them in cloud
+                  environments to improve learning outcomes. <br /> •
+                  Collaborated with cross-functional teams to deliver scalable
+                  solutions for impactful educational technology.
+                </p>
+              </div>
+            </div>
+
+            <div className=" cursor-pointer mt-[50px] exp-1 p-5 shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
+              <div className="flex justify-between gap-6">
+                <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
+                  Software Developer Intern
+                </h3>
+                <div>
+                  <a href="https://www.ednius.com/" className="cursor-pointer hover:text-white text-[14px] flex items-center gap-2">
+                    Ednius Inc. <MdArrowOutward/>
+                  </a>
+                  <p className="text-[12px] text-gray-400">
+                    Feb 2024 – May 2024
+                  </p>
+                </div>
+              </div>
+              <div className="mt-[20px]">
+                <p className="text-[13px]">
+                  Developed an AI-powered grading tool at Ednius, collaborating
+                  with a team to automate grading and enhance student feedback.
+                  Utilized React, TypeScript, Azure, and Python to create
+                  scalable solutions in a fast-paced, remote environment. <br /> •
+                  Automated grading process and provided personalized feedback
+                  for students. • Utilized React, TypeScript, Azure, and Python
+                  to create scalable solutions. <br /> • Gained insights into
+                  cloud-based software development and AI integration.
                 </p>
               </div>
             </div>
@@ -53,30 +82,6 @@ const Experience = () => {
                   Collaborating seamlessly with machine learning teams,
                   integrated frontend design tools to ensure intuitive and
                   responsive user interfaces.
-                </p>
-              </div>
-            </div>
-
-            <div className=" cursor-pointer exp-2 p-5 mt-[50px] shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
-              <div className="flex justify-between gap-6">
-                <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
-                  Entrepreneurial Intern
-                </h3>
-                <div>
-                  <h3 className="cursor-pointer hover:text-white text-[14px]">
-                    E-cell IIT Madras
-                  </h3>
-                  <p className="text-[12px] text-gray-400">
-                    Aug 2021 – Feb 2022
-                  </p>
-                </div>
-              </div>
-              <div className="mt-[30px]">
-                <p className="text-[13px]">
-                  Revitalized our college E-cell with my teammates, mirroring
-                  the success model of IIT Madras E-cell, along with 20 other
-                  colleges. Clinched the coveted top e-cell designation at the
-                  end of the tenure.
                 </p>
               </div>
             </div>
