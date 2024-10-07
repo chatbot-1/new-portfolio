@@ -16,17 +16,17 @@ const Contact = () => {
         <div className="flex justify-evenly mt-[50px]">
           <div className="flex flex-col gap-10">
             <a
-              href="https://twitter.com/itsmeatul_"
+              href="https://x.com/dirthief_"
               className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
             >
               <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
                 <FaTwitter />
-                Twitter
+                X
               </p>
               <MdArrowOutward/>
             </a>
             <a
-              href="https://www.linkedin.com/in/atulsingh01/"
+              href="https://www.linkedin.com/in/atulxtech/"
               className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
             >
               <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
@@ -48,7 +48,7 @@ const Contact = () => {
               <MdArrowOutward/>
             </a>
             <a
-              href="https://www.instagram.com/justtatul/"
+              href="https://www.instagram.com/archives.tsx/"
               className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
             >
               <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
