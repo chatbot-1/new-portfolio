@@ -1,88 +1,68 @@
-import {
-  FaDiscord,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
-import { BiLogoGmail } from "react-icons/bi";
-import { MdArrowOutward } from "react-icons/md";
+import { FiArrowUpRight } from "react-icons/fi";
+import { profile, socials } from "../data/portfolio";
+import Reveal from "./Reveal";
 
 const Contact = () => {
   return (
-    <div id="contact" className="text-[13px] xl:text-[16px] md:text-[15px] sm:text-[14px] container mt-[100px] mb-[60px]">
-      <div>
-        <h2 className="text-[22px]">Reach out to me at 🤝:</h2>
-        <div className="flex justify-evenly mt-[50px]">
-          <div className="flex flex-col gap-10">
+    <section id="contact" className="container-x py-20 sm:py-28">
+      <Reveal className="flex items-center gap-3 border-b border-ink/15 pb-4">
+        <span className="font-sans text-[12px] font-semibold tracking-[0.25em] text-accent">
+          05
+        </span>
+        <span className="font-sans text-[12px] font-medium uppercase tracking-[0.22em] text-ink-faint">
+          Contact
+        </span>
+      </Reveal>
+
+      <Reveal
+        as="h2"
+        delay={80}
+        className="mt-8 max-w-3xl font-serif text-[2.5rem] font-medium leading-[1.02] tracking-tight sm:text-6xl"
+      >
+        Let's make something{" "}
+        <span className="italic text-accent">worth using</span>.
+      </Reveal>
+
+      <Reveal delay={140} className="mt-8">
+        <a
+          href={`mailto:${profile.email}`}
+          className="group inline-flex items-center gap-3 font-serif text-2xl text-ink transition-colors hover:text-accent sm:text-4xl"
+        >
+          {profile.email}
+          <FiArrowUpRight className="transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
+        </a>
+      </Reveal>
+
+      <Reveal
+        delay={200}
+        className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 border-t border-ink/15 pt-6"
+      >
+        <span className="font-sans text-[12px] uppercase tracking-[0.2em] text-ink-faint">
+          {profile.availability}
+        </span>
+        <div className="flex flex-wrap gap-x-6 gap-y-2">
+          {socials.map((s) => (
             <a
-              href="https://x.com/dirthief_"
-              className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
+              key={s.name}
+              href={s.url}
+              target="_blank"
+              rel="noreferrer"
+              className="link-line font-sans text-sm text-ink-soft hover:text-ink"
             >
-              <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
-                <FaTwitter />
-                X
-              </p>
-              <MdArrowOutward/>
+              {s.name}
             </a>
-            <a
-              href="https://www.linkedin.com/in/atulxtech/"
-              className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
-            >
-              <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
-                <FaLinkedinIn />
-                LinkedIn
-              </p>
-              <MdArrowOutward/>
-            </a>
-          </div>
-          <div className="flex flex-col gap-10">
-            <a
-              href="https://github.com/chatbot-1"
-              className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
-            >
-              <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
-                <FaGithub />
-                GitHub
-              </p>
-              <MdArrowOutward/>
-            </a>
-            <a
-              href="https://www.instagram.com/archives.tsx/"
-              className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
-            >
-              <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
-                <FaInstagram />
-                Instagram
-              </p>
-              <MdArrowOutward/>
-            </a>
-          </div>
-          <div className="flex flex-col gap-10">
-            <div
-              onClick={() => window.location.href = 'mailto:getupmaverick@gmail.com'}
-              className="flex justify-start items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
-            >
-              <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
-                <BiLogoGmail />
-                Email
-              </p>
-              <MdArrowOutward/>
-            </div>
-            <a
-              href="https://discordapp.com/users/885203531483742219"
-              className="flex justify-center items-center cursor-pointer gap-2 ease-in-out duration-300 hover:text-white"
-            >
-              <p className="flex items-center gap-1 border-dashed border-b-[1.5px] border-gray-700/50">
-                <FaDiscord />
-                Discord
-              </p>
-              <MdArrowOutward/>
-            </a>
-          </div>
+          ))}
+          <a
+            href={profile.resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="link-line font-sans text-sm text-ink-soft hover:text-ink"
+          >
+            Résumé
+          </a>
         </div>
-      </div>
-    </div>
+      </Reveal>
+    </section>
   );
 };
 

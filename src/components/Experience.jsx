@@ -1,94 +1,80 @@
-import { MdArrowOutward } from "react-icons/md";
+import { FiArrowUpRight } from "react-icons/fi";
+import { experiences, leadership } from "../data/portfolio";
+import SectionHeading from "./SectionHeading";
+import Reveal from "./Reveal";
+
 const Experience = () => {
   return (
-    <div id="experience" className="container mt-[100px]">
-      <div className="exp-area ">
-        <div className="card">
-          <h2 className="text-[22px]">Working Experience 💪:</h2>
-          <div className="mt-[25px] border border-dashed rounded p-6 pt-10 pb-10 border-gray-700/50">
-            <div className=" cursor-pointer exp-1 p-5 shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
-              <div className="flex justify-between gap-6">
-                <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
-                  Software Developer
-                </h3>
-                <div>
-                  <a href="https://www.ednius.com/" className="cursor-pointer hover:text-white text-[14px] flex items-center gap-2">
-                    Ednius Inc. <MdArrowOutward/>
-                  </a>
-                  <p className="text-[12px] text-gray-400">
-                    June 2024 – Current
-                  </p>
-                </div>
-              </div>
-              <div className="mt-[20px]">
-                <p className="text-[13px]">
-                  Developed and refined AI-powered grading platform at Ednius,
-                  utilizing React, TypeScript, Azure, and Python to automate
-                  grading and enhance personalized feedback for students. <br />{" "}
-                  • Designed efficient systems and deployed them in cloud
-                  environments to improve learning outcomes. <br /> •
-                  Collaborated with cross-functional teams to deliver scalable
-                  solutions for impactful educational technology.
-                </p>
-              </div>
+    <section id="work" className="container-x py-20 sm:py-28">
+      <SectionHeading index="02" eyebrow="Experience" title="Where I've been working." />
+
+      <div className="border-t border-ink/15">
+        {experiences.map((exp, i) => (
+          <Reveal
+            key={exp.company}
+            delay={i * 80}
+            className="grid gap-5 border-b border-ink/15 py-9 md:grid-cols-12 md:gap-8"
+          >
+            <div className="md:col-span-4">
+              <p className="font-sans text-[12px] uppercase tracking-[0.18em] text-ink-faint">
+                {exp.period}
+              </p>
+              <h3 className="mt-2 font-serif text-2xl font-medium leading-tight">
+                {exp.role}
+              </h3>
+              <a
+                href={exp.url}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-1 inline-flex items-center gap-1 font-sans text-sm text-accent hover:underline"
+              >
+                {exp.company} <FiArrowUpRight />
+              </a>
+              <p className="mt-1 font-sans text-[12px] text-ink-faint">{exp.location}</p>
             </div>
 
-            <div className=" cursor-pointer mt-[50px] exp-1 p-5 shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
-              <div className="flex justify-between gap-6">
-                <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
-                  Software Developer Intern
-                </h3>
-                <div>
-                  <a href="https://www.ednius.com/" className="cursor-pointer hover:text-white text-[14px] flex items-center gap-2">
-                    Ednius Inc. <MdArrowOutward/>
-                  </a>
-                  <p className="text-[12px] text-gray-400">
-                    Feb 2024 – May 2024
-                  </p>
-                </div>
-              </div>
-              <div className="mt-[20px]">
-                <p className="text-[13px]">
-                  Developed an AI-powered grading tool at Ednius, collaborating
-                  with a team to automate grading and enhance student feedback.
-                  Utilized React, TypeScript, Azure, and Python to create
-                  scalable solutions in a fast-paced, remote environment. <br /> •
-                  Automated grading process and provided personalized feedback
-                  for students. • Utilized React, TypeScript, Azure, and Python
-                  to create scalable solutions. <br /> • Gained insights into
-                  cloud-based software development and AI integration.
-                </p>
+            <div className="md:col-span-8">
+              <p className="text-[15px] leading-relaxed text-ink-soft">{exp.summary}</p>
+              <ul className="mt-4 space-y-2.5">
+                {exp.highlights.map((point, j) => (
+                  <li
+                    key={j}
+                    className="flex gap-3 text-[14.5px] leading-relaxed text-ink-soft"
+                  >
+                    <span className="mt-2.5 h-px w-4 shrink-0 bg-accent" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {exp.tags.map((tag) => (
+                  <span key={tag} className="tag">
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
-
-            <div className=" cursor-pointer exp-1 p-5 mt-[50px] shadow-lg shadow-gray-800/50 ease-in-out duration-300 hover:shadow-gray-800/90">
-              <div className="flex justify-between gap-6">
-                <h3 className="cursor-pointer hover:text-white flex items-center gap-3">
-                  Frontend Developer Intern
-                </h3>
-                <div>
-                  <h3 className="cursor-pointer hover:text-white text-[14px]">
-                    Final Project
-                  </h3>
-                  <p className="text-[12px] text-gray-400">
-                    May 2023 – June 2023
-                  </p>
-                </div>
-              </div>
-              <div className="mt-[20px]">
-                <p className="text-[13px]">
-                  Spearheaded frontend development for machine learning
-                  projects, embedding user-centric design principles.
-                  Collaborating seamlessly with machine learning teams,
-                  integrated frontend design tools to ensure intuitive and
-                  responsive user interfaces.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+          </Reveal>
+        ))}
       </div>
-    </div>
+
+      {/* Leadership & community */}
+      <Reveal className="mt-12">
+        <p className="eyebrow">Leadership & community</p>
+        <div className="mt-5 grid gap-px border border-ink/15 bg-ink/15 sm:grid-cols-2">
+          {leadership.map((item) => (
+            <div key={item.role} className="bg-paper p-6">
+              <div className="flex items-baseline justify-between gap-4">
+                <p className="font-serif text-base font-medium">{item.role}</p>
+                <span className="font-sans text-[12px] text-ink-faint">{item.period}</span>
+              </div>
+              <p className="mt-1 font-sans text-[13px] text-accent">{item.org}</p>
+              <p className="mt-2 text-[13.5px] leading-relaxed text-ink-soft">{item.note}</p>
+            </div>
+          ))}
+        </div>
+      </Reveal>
+    </section>
   );
 };
 
