@@ -10,7 +10,7 @@ const Hero = () => {
       {/* meta row */}
       <Reveal className="flex items-center justify-between border-b border-ink/15 pb-5 font-sans text-[11px] uppercase tracking-[0.22em] text-ink-faint sm:text-[12px]">
         <span>
-          {profile.role} — {profile.location.replace("Remote · ", "")}
+          {profile.role} · {profile.location.replace("Remote · ", "")}
         </span>
         <span className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 rounded-full bg-accent" /> Open to work
@@ -34,7 +34,7 @@ const Hero = () => {
             delay={140}
             className="mt-7 max-w-lg text-[15px] leading-relaxed text-ink-soft sm:text-base"
           >
-            I'm Atul — a software engineer at{" "}
+            I'm Atul, a software engineer at{" "}
             <a
               href={profile.companyUrl}
               target="_blank"

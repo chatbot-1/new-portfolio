@@ -9,7 +9,7 @@ const Footer = () => {
           {profile.name}
           <span className="text-accent">.</span>{" "}
           <span className="font-sans text-[13px] text-ink-faint">
-            — {profile.tagline}
+            {profile.tagline}
           </span>
         </p>
 
