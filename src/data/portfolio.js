@@ -107,55 +107,20 @@ export const leadership = [
 
 export const projects = [
   {
-    name: "Health Aura",
+    name: "Governor",
     blurb:
-      "A patient-centric healthcare platform with separate patient and doctor panels — online appointment booking, digital prescriptions, and JWT-based role authentication.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
-    github: "https://github.com/chatbot-1/healthAura2.0",
-    live: "https://health-aura.netlify.app/",
-    featured: true,
+      "An open-source distributed rate limiter for Node.js — token bucket, sliding window log, and sliding window counter algorithms behind one interface, with an atomic Redis-backed mode via Lua scripting. Proved and fixed a real race condition and benchmarked all three at ~2M ops/sec locally.",
+    tags: ["TypeScript", "Redis", "Node.js", "Lua"],
+    github: "https://github.com/chatbot-1/governor",
+    live: "https://www.npmjs.com/package/@chatbot-1/governor",
   },
   {
-    name: "Unimart",
+    name: "Juror",
     blurb:
-      "A full-stack campus marketplace built at a hackathon with a Django REST backend — students can buy, rent, sell, or exchange used products.",
-    tags: ["Python", "Django", "Tailwind CSS"],
-    github: "https://github.com/notnotrachit/unimart",
-    live: "https://unimart.rachitkhurana.repl.co/",
-    featured: true,
-  },
-  {
-    name: "SportOn",
-    blurb:
-      "A web app for sports enthusiasts to discover and engage with communities, with Firebase authentication and a responsive React UI.",
-    tags: ["React", "Firebase", "JavaScript", "CSS"],
-    github: "https://github.com/chatbot-1/sports-on-web",
-    live: "https://sportsonweb.netlify.app/",
-    featured: true,
-  },
-  {
-    name: "SpotSail",
-    blurb:
-      "Find real-time availability — seats at restaurants, beds in hospitals, or college admission seats — all in one place.",
-    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    github: "https://github.com/chatbot-1/spot-sail",
-    live: "https://spotsail.netlify.app/",
-  },
-  {
-    name: "Video Chat App",
-    blurb:
-      "A Google Meet / Zoom-style web app delivering a seamless real-time video conferencing experience.",
-    tags: ["JavaScript", "Python", "Django", "Tailwind CSS"],
-    github: "https://github.com/chatbot-1/video-chat",
-    live: "",
-  },
-  {
-    name: "SpaceX Clone",
-    blurb:
-      "A polished frontend clone of the SpaceX site built on web fundamentals, with smooth animations and spacecraft details.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/chatbot-1/spaceX_clone",
-    live: "http://atulsingh.me/spaceX_clone/",
+      "A zero-cost LLM evaluation toolkit that scores model outputs against a rubric using a local model as judge — running entirely on Ollama with no external API cost. Surfaced a self-eval bias across 84 real grades and ships a Streamlit dashboard reading live from SQLite, with 35 passing tests.",
+    tags: ["Python", "Ollama", "Streamlit", "SQLite"],
+    github: "https://github.com/chatbot-1/juror",
+    live: "https://pypi.org/project/juror/",
   },
 ];
 
